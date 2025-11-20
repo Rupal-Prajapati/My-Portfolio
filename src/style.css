@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050521;
+  color: white;
+}
+
+/* --------- NAVBAR ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+  background: #0a0a4f;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(197, 194, 207);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  color: rgb(0, 183, 255);
+}
+
+/* ---------- FIRST SECTION ---------- */
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 70px;
+  align-items: center;
+}
+
+.leftSection h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.leftSection span {
+  color: rgb(0, 153, 255);
+}
+
+.leftSection p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #008cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0069c2;
+}
+
+.rightSection img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.5);
+}
+
+/* --------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #00001a;
+  margin-top: 50px;
+  color: rgb(175, 175, 175);
+}
+/* Add this to your style.css */
+
+/* General Section Styling */
+.section {
+    padding: 100px 70px;
+    min-height: 50vh; /* Ensures a minimum height for visibility */
+    border-top: 1px solid #1a1a6f; /* Separator line */
+}
+
+/* Styles for specific new sections (Optional) */
+.contactSection {
+    text-align: center;
+    padding: 100px 70px;
+    min-height: 50vh;
+    border-top: 1px solid #1a1a6f;
+}
+
+.contactSection h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contactSection p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contactSection .socialLinks p {
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(175, 175, 175);
+}
+/* --- SKILLS SECTION STYLES --- */
+.skillsSection h2,
+.projectsSection h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: rgb(0, 153, 255);
+}
+
+.skillsGrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skillCategory {
+    background: #0a0a4f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.2);
+    width: 250px;
+}
+
+.skillCategory h3 {
+    color: rgb(0, 183, 255);
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0069c2;
+    padding-bottom: 5px;
+}
+
+.skillCategory ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skillCategory li {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* --- PROJECTS SECTION STYLES --- */
+.projectsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.projectCard {
+    background: #0a0a4f;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard h3 {
+    color: rgb(0, 183, 255);
+    margin-bottom: 10px;
+}
+
+.projectCard p {
+    flex-grow: 1; /* Allows description to take up available space */
+    margin-bottom: 15px;
+    color: rgb(175, 175, 175);
+}
+
+.projectCard .techStack {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.projectBtn {
+    align-self: flex-start;
+}
+/* Update .contactSection to center align and style contact info */
+.contactSection {
+    text-align: center;
+    padding: 100px 70px;
+    min-height: 50vh;
+    border-top: 1px solid #1a1a6f;
+}
+
+.contactSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(0, 153, 255);
+}
+
+.contactSection p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contactDetails {
+    margin: 30px auto;
+    max-width: 500px;
+    font-size: 1.1rem;
+}
+
+.contactDetails a {
+    color: white; /* Maintain white text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
+}
+
+.contactDetails a:hover,
+.socialLinks a:hover {
+    color: rgb(0, 183, 255); /* Highlight on hover */
+}
+
+.socialLinks {
+    margin-top: 50px;
+}
+
+.socialLinks h3 {
+    margin-bottom: 15px;
+    color: rgb(0, 153, 255);
+}
+
+.socialLinks p a {
+    color: rgb(175, 175, 175);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
